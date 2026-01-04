@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>致银诗嘉的一封信</title>
+    <style>
+        /* 引入文艺字体（如果对方没装，会回退到系统衬线体） */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;500&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fdfcf8; /* 米白色纸张感 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Noto Serif SC', 'Source Han Serif SC', 'SimSun', serif;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 40px 25px;
+            margin: 20px;
+            background: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: 2px;
+            position: relative;
+            animation: fadeIn 3s ease-in;
+        }
+
+        /* 模拟信纸横线（可选） */
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px);
+            background-size: 100% 2.5em;
+            pointer-events: none;
+        }
+
+        h2 {
+            font-weight: 500;
+            text-align: left;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-indent: 2em;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+
+        .signature {
+            text-align: right;
+            margin-top: 50px;
+            font-style: italic;
+        }
+
+        .footer {
+            text-align: right;
+            font-size: 0.9rem;
+            color: #999;
+            margin-top: 10px;
+        }
+
+        /* 渐显动画 */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 针对手机端的适配 */
+        @media (max-width: 480px) {
+            .container { padding: 30px 20px; }
+            p { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>嘉：</h2>
+    <p>想了很久 还是决定把藏了挺久的话告诉你 我真的很喜欢你 总是不由自主地想对你好 想办法让你开心 看到你难过时 我的情绪会比你先一步跌进低谷 看到手机屏幕亮起你的名字 我会像个孩子一样反复推敲每一个回复的字句 怕太唐突 又怕不够温暖 为了让你开心 我会去研究你的每一个小喜好 当你有烦恼时 我会忍不住地想安慰你 并且想方设法地为你解决 那些约你玩游戏的日子 其实都是我想和你多待一会儿的私心 那些见面时的局促和慌张 也都是因为内心太在乎 怕给不了你最好的反馈 我曾很多次想克制这份心意 但发现它早已超出了我可以控制的范围</p>
+    
+    <p>尽管我们之间从未有过那种明目张胆的暧昧 但在我的世界里 这份心意始终如一 从未改变</p>
+    
+    <p>所以 当听到你把我当作亲哥哥的时候 我的心底其实泛起过一阵很细腻的酸涩 那个词像是一道温柔的屏障 把我所有想要靠近的脚步都留在了界线之外 这种身份的错位感 曾让我觉得那些真诚的努力 有些无力 也有些心酸</p>
+
+    <p>我想 我现在已经读懂了你的答案 但这并不代表我要转身离开 只是接下来的日子 我想换一种方式去守护 我会试着把一部分重心放回自己身上 去跑好我 2027 考研这场关乎未来的长跑 我想让自己变得更优秀 更从容 去给这份认真留一份更体面的交代</p>
+    
+    <p>我依然是那个希望嘉一切都好的我 依然会在你需要的时候出现在你身后 只是想让这份藏了很久的心意在阳光下晒一晒 也是对我这段时间所有赤诚情感的一份交代</p>
+
+    <div class="signature">那个一直支持你的</div>
+    <div class="footer">2026年1月3日</div>
+</div>
+
+</body>
+</html>
